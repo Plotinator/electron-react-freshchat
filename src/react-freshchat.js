@@ -68,18 +68,19 @@ let queueMethod = method => (...args) => {
 let loadScript = () => {
   let id = 'freshchat-lib'
   if (document.getElementById(id) || window.fcWidget) return
+  let widget = require('./widget')
+  let text = document.createTextNode(widget)
   let script = document.createElement('script')
-  script.async = 'true'
   script.type = 'text/javascript'
-  script.src = 'https://wchat.freshchat.com/js/widget.js'
   script.id = id
+  script.appendChild(text)
   document.head.appendChild(script)
 }
 
 class FreshChat extends React.Component {
   constructor(props) {
     super(props)
-    
+
     let { token, ...moreProps } = props
 
     if (!token) {

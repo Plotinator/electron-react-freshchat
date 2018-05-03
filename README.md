@@ -4,7 +4,7 @@ React Freshchat is a wrapper on top of Freshchat (see oficial doc here https://d
 ## How to use
 **DO NOT INCLUDE Freshchat script in `head`, React Freshchat will automatically add it with lazy load technique**
 
-* Install `react-freshchat` (see Installation).
+* Install `electron-react-freshchat` (see Installation).
 * Import the lib where you initialize your React App.
 * Include the component with the `token`.
 
@@ -12,7 +12,7 @@ React Freshchat is a wrapper on top of Freshchat (see oficial doc here https://d
 
 ```
 import React from 'react'
-import FreshChat from 'react-freshchat'
+import FreshChat from 'electron-react-freshchat'
 
 class App extends React.Component {
   // ...
@@ -41,7 +41,7 @@ class App extends React.Component {
 For more details: https://developers.freshchat.com/
 
 ## Installation
-Only NPM is supported for now: `npm i -s react-freshchat`
+Only NPM is supported for now: `npm i -s electron-react-freshchat`
 
 ## UMD Support
 UMD is supported out of the box.

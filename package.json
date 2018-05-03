@@ -21,6 +21,7 @@
     "url": "git+https://github.com/Plotinator/electron-react-freshchat.git"
   },
   "keywords": [
+    "electron",
     "react",
     "freshchat"
   ],
